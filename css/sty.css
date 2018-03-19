@@ -1,0 +1,95 @@
+ * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            padding: 20px;
+        }
+        
+        #container {
+            position: relative;
+            width: 830px;
+            height: 440px;
+            overflow: hidden;
+             margin:50px auto;
+        }
+        
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 5810px;
+            height: 440px;
+            transition: 1s;
+        }
+        
+        #list img {
+            float: left;
+
+        }
+        
+        #buttons {
+            position: absolute;
+            left: 365px;/*(图片宽-圆点宽)/2*/
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        
+        #buttons span {
+            float:left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px; 
+            border-radius: 50%;
+            background:#808080;
+            cursor: pointer;
+        }
+        
+        #buttons .on {
+            background:#fff;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 190px;/*（container高度-按钮高度）/2*/
+            z-index: 2;
+            display: none;
+            width: 30px;
+            height: 60px;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 55px;
+            text-align: center;
+            color: #fff;
+            background-color: RGBA(0, 0, 0,0.2);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+             /*通过渐变，IE透明兼容*/
+            cursor: pointer;/*定义光标*/
+        }
+        
+        .arrow:hover {
+            background-color: RGBA(0, 0, 0,0.4);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+             /*通过渐变，IE透明兼容*/
+        }
+        .arrow:active{
+    		background:RGBA(0,0,0,0.7);
+    		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
+    	 /*通过渐变，IE透明兼容*/
+		}
+        
+        #container:hover .arrow {
+            display: block;
+        }
+        
+        #prev {
+            left: 0px;
+        }
+        
+        #next {
+            right: 0px;
+        }
